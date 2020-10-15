@@ -5,7 +5,7 @@
 }
 
 body {
-    color:#008080;
+    color:#000000;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -14,24 +14,25 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2px 30px 10px;
-    background-color: #d88794;
+    padding: 10px 30px 10px 0;
+    background-color: #000000;
 }
 
-header h1 {
+header div {
+    display: flex;
+    justify-content: flex-start;
+}
+header div h1 {
     font-weight: bold;
     font-size: 32px;
-    background-color: #fce138;
-    color: #d88794;
+    background-color: #ea319e;
+    color: #000000;
     margin: 0;
     text-align: right;
-}
+    align-self: center;
+    width: 350px;
 
-header a {
-    text-decoration: none;
-    color: #fce138;
 }
-
 header nav {
     margin: 7px 0;
 }
@@ -46,40 +47,129 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
-    text-decoration: underline;
+    font-size: 20px;
+    border-bottom: 2px solid #ea319e;
+    color: #ea319e;
+    text-decoration: none;
 }
 /* Header Styles End */
-
 /*Hero Styles Begin */
 .hero {
     display: flex;
-    justify-content: center;
-    background-image: url(../images/Snapchat-74252709.jpg);
+    justify-content: flex-end;
+    background-image: url(../images/PinkWal.jpg);
     background-size: cover;
     background-position: 80%;
     align-items: flex-start;
     background-attachment: fixed;
+    z-index: 9999;
+    height: 400px;
+}
+.profile {
+width: 250px;
+height: 350px;
+flex: 0 1 250px;
+}
+.profile-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0 auto;
+    
 }
 
-.hero-sub h3 {
-    color: #d88794;
-    background-color: #fce138;
+.profile-pic {
+    display: flex;
+    z-index: 9998;
+}
+.profile-pic img {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    border: 4px solid #000000;
+    
+}
+
+.profile-title h3 {
+    color: #ea319e;
+    background-color: #000000;
     padding: 10px;
     margin: 3.5%;
+    width: 100%;
+    height: 50px;
     font-size: 22px;
+    text-align: center;
+    align-self: center;
+   
 }
+
 /* Hero Styles End */
 
+/* About Me Styles Start */
 section {
-    padding: 60px;
+    padding: 30px;
 }
 .section-title {
-    font-size: 35px;
-    color: #008080;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 50px;
+    color: #ea319e;
     border-right: 5px solid;
-    padding-right: 20px;
     text-align: right;
-    margin: auto 0 auto 35px;
+    width: 15%;
+    padding: 60px 10px 30px 60px;
+}
+.section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+}
+/*About Me Styles End */
+
+/* Work Styles Start */
+/* Work Styles End*/
+
+/* Contact Me Section Styles */
+
+
+.contact div {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
 }
 
+.contact div .section-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 50px;
+    color: #ea319e;
+    border-right: 5px solid;
+    text-align: right;
+    width: 15%;
+    padding: 60px 10px 30px 60px;
+}
+
+.contact-wrapper nav {
+    margin: 7px 0;
+}
+
+.contact-wrapper nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.contact-wrapper nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #ea319e;
+    text-decoration: underline;
+}
