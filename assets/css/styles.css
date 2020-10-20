@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: flex-end;
     padding: 10px 30px 10px 0;
     background-color: #000000;
 }
@@ -44,6 +44,19 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
+header nav ul li {
+    margin: 5px;
+    border-bottom: 2px solid #ea319e;
+}
+header nav ul li:hover {
+    color: #ea319e;
+    background-color: #000000;
+    border: 2px solid #F2CC8F;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.5s;
+    padding-top: 5px;
+}
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
@@ -62,8 +75,7 @@ header nav ul li a {
     background-position: 80%;
     align-items: flex-start;
     background-attachment: fixed;
-    z-index: 9999;
-    height: 400px;
+    height: 500px;
 }
 .profile {
 width: 250px;
@@ -131,6 +143,84 @@ section {
 /*About Me Styles End */
 
 /* Work Styles Start */
+.grid-box {
+    flex: 1 85%;
+    height: 600px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+} 
+
+.grid-wrapper {
+    display: grid;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) minmax(150px);
+    grid-gap: 20px;  
+}
+
+.grid-wrapper a {
+    text-decoration: none;
+}
+
+.grid-item {
+    display: flex;
+    border: 10px solid #000000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 50%);
+    align-items: flex-end;
+    background-blend-mode: soft-light;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.grid-item:hover {
+    background-color:  rgba(234, 49, 158, 0.4);
+}
+
+
+.project-label {
+    background-color: #000000;
+    color: #ea319e;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.project-label h2 {
+    font-size: 24px;
+    width: 100%;
+}
+
+
+.grid-item.project-1{
+    background-image: url("../images/RunBuddy.JPG");
+    background-size: cover;
+    width: 100%;
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+.grid-item.project-2, .grid-item.project-3, .grid-item.project-4, .grid-item.project-5 {
+    background-size: cover;
+   
+    width: 100%;
+}
+
+.grid-item.project-2 {
+    background-image: url("../images/LED\ Wall.jfif");
+}
+.grid-item.project-3 {
+    background-image: url("../images/calculator-placeholder.jpg");
+} 
+.grid-item.project-4 {
+    background-image: url("../images/Pastel\ Puzzle.jfif");
+} 
+.grid-item.project-5 {
+    background-image: url("../images/Surf\ Report.jfif");
+}
 /* Work Styles End*/
 
 /* Contact Me Section Styles */
