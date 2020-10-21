@@ -124,7 +124,7 @@ header nav ul li a {
 
 /* Body Styles Start */
 .section-content {
-    width: 90%;
+    width: 100%;
     margin: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -135,6 +135,7 @@ header nav ul li a {
 .section-title-container {
     width: 20%;
     display: flex;
+    justify-content: right;
     
 }
 .section-title {
@@ -143,17 +144,16 @@ header nav ul li a {
     font-size: 50px;
     color: #ea319e;
     text-align: right;
-    width: 20%;
-    margin: 10px 0 10px 60px;
+    margin: 10px 10px 10px 60px;
 }
 
 .section-body-container {
-    width: 70%;
+    width: 75%;
     margin: 10px 30px 10px 10px;
     display: flex;
     justify-content: space-between;
     border-left: 4px solid #000000;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 .section-body {
     display: flex;
@@ -261,6 +261,8 @@ header nav ul li a {
 .contact-wrapper {
     width: 100%;
     display: flex;
+    height: 200px;
+    align-items: center;
 }
 .contact-wrapper nav {
     margin: 7px 0;
@@ -296,3 +298,19 @@ header nav ul li a {
     text-decoration: none;
 }
 /* Contact Me Styles End */
+
+/*Media Queries*/
+
+@media screen and (max-width: 1200px){
+ 
+
+/*Screen sizes smaller than 1024px*/
+@media screen and (max-width: 1024px) {
+ 
+
+
+
+/*Screen sizes smaller than 575px*/
+@media screen and (max-width: 575px) {
+    
+ 
