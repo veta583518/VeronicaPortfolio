@@ -14,20 +14,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10px 30px 10px 0;
+    padding: 10px 60px 10px 0;
     background-color: #000000;
 }
 
-header div {
+.header-container {
     display: flex;
     justify-content: flex-start;
+    background-color: #ea319e;
+    color: #000000;
+
 }
 header div h1 {
     font-weight: bold;
     font-size: 32px;
-    background-color: #ea319e;
-    color: #000000;
-    margin: 0;
+    margin-right: 20px;
     text-align: right;
     align-self: center;
     width: 350px;
@@ -92,7 +93,7 @@ header nav ul li a {
     align-content: center;
 }
 .profile-typewriter-animation {
-    color: #ea319e;
+    color: #ffffff;
     font-family: monospace;
     font-weight: bolder;
     margin: 60px 40px;
@@ -101,11 +102,12 @@ header nav ul li a {
     font-size: 24px;
     text-align: center;
     letter-spacing: 5px;
+    
 }
 
 .profile-pic-container {
     display: flex;
-    width: 40%;
+    flex: 40%;
     justify-content: center;
     height: 350px;
 }
@@ -122,12 +124,18 @@ header nav ul li a {
 
 /* Body Styles Start */
 .section-content {
-    width: 100%;
+    width: 90%;
     margin: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 .section-title-container {
-    width: 30%;
+    width: 20%;
     display: flex;
+    
 }
 .section-title {
     display: flex;
@@ -136,12 +144,12 @@ header nav ul li a {
     color: #ea319e;
     text-align: right;
     width: 20%;
-    margin: 40px 10px 40px 60px;
+    margin: 10px 0 10px 60px;
 }
 
 .section-body-container {
     width: 70%;
-    margin: 10px;
+    margin: 10px 30px 10px 10px;
     display: flex;
     justify-content: space-between;
     border-left: 4px solid #000000;
@@ -153,12 +161,21 @@ header nav ul li a {
     width: 100%;
 
 }
-/*About Me Styles End */
+/* Body Styles End*/
 
+/* About Me Styles Begin*/
+.bio {
+    height: ;
+}
+.bio p {
+    font-size: 20px;
+    margin: 10px;
+}
 /* Work Styles Start */
 .work-grid-wrapper {
     height: 500px;
     padding-top: 10px;
+    width: 100%;
 } 
 
 .work-grid-container {
@@ -200,6 +217,13 @@ header nav ul li a {
 .work-grid-label h2 {
     font-size: 24px;
     width: 100%;
+    text-align: center;
+}
+.work-grid-label h3 {
+    font-weight: lighter;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Work grid images */
@@ -232,33 +256,15 @@ header nav ul li a {
 }
 /* Work Styles End*/
 
-/* Contact Me Section Styles */
+/* Contact Me Styles */
 
-
-/*.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-}*/
-
-/*.contact div .section-title {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    font-weight: bold;
-    font-size: 50px;
-    color: #ea319e;
-    border-right: 5px solid;
-    text-align: right;
-    width: 15%;
-    padding: 60px 10px 30px 60px;
-}*/
 .contact-wrapper {
     width: 100%;
     display: flex;
 }
 .contact-wrapper nav {
     margin: 7px 0;
+    width: 100%;
 }
 
 .contact-wrapper nav ul {
@@ -289,3 +295,4 @@ header nav ul li a {
     border-bottom: 2px solid #ea319e;
     text-decoration: none;
 }
+/* Contact Me Styles End */
