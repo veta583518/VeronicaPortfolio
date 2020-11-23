@@ -10,6 +10,7 @@ Provide a portfolio of work samples and some information about myself for potent
 * Responsive formatting
 
 #### Screenshot 
+![ScreenshptVeronicaPortfolio1] (https://github.com/veta583518/VeronicaPortfolio/blob/main/sctreenshot%202.JPG)
 ![ScreenshotVeronicaPortfolio](https://github.com/veta583518/VeronicaPortfolio/blob/main/Screenshot%201.JPG)
 
 ##### Deployed Application
