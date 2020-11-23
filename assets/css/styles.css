@@ -339,8 +339,8 @@ media screen and (max-width: 980px) {
     .section-title {
         width: 80%;
     }
-    .trainer {
-        flex: 0 70%;
+    .title {
+        font-size: 70px;
     }
     .contact-info iframe {
         flex: 1 100%;
