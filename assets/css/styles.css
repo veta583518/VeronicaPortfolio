@@ -226,7 +226,7 @@ header nav ul li a {
 
 /* Work grid images */
 .work-grid-item.project-1 {
-  background-image: url("../images/Screenshot_2020-11-18\ Off\ the\ Beaten\ Path\(3\).jpg");
+  background-image: url("../images/Pokefinder-Screenshot.PNG");
   background-size: cover;
   width: 100%;
   grid-column: 1 / span 2;
@@ -237,7 +237,7 @@ header nav ul li a {
 }
 
 .work-grid-item.project-3 {
-  background-image: url("../images/Pokefinder-Screenshot.PNG");
+  background-image: url("../images/Screenshot_2020-11-18\ Off\ the\ Beaten\ Path\(3\).jpg");
 }
 
 .work-grid-item.project-4 {
